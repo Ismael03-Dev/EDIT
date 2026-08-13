@@ -15,7 +15,7 @@ const redis = new Redis({
 	token: process.env.UPSTASH_REDIS_REST_TOKEN,
 });
 
-const HF_TOKEN = "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";
+const HF_TOKEN = process.env.HF_TOKEN;
 const JOB_PREFIX = "image-edit-job:";
 const JOB_TTL_SECONDS = 60 * 60;
 
